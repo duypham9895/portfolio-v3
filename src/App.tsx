@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 import NotFound from "./pages/NotFound";
 import HomePage from "./pages/HomePage";
-import Home from "./pages/Home";
+import Home from "./pages/UI/Home";
 
 type Props = {};
 

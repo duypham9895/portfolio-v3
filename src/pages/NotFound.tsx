@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import PageTitle from "./PageTitle";
+import PageTitle from "./UI/PageTitle";
 
 type Props = {};
 

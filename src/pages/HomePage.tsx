@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 import userImage from "../assets/images/about/avatar.jpg";
-import PageTitle from "./PageTitle";
+import PageTitle from "./UI/PageTitle";
 
 type Props = {};
 

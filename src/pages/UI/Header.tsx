@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
-import { menuItem } from "../data/menu";
-import NavLink from "./UI/NavLink";
+import { menuItem } from "../../data/menu";
+import NavLink from "./NavLink";
 
 type Props = {};
 
