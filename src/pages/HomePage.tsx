@@ -12,7 +12,7 @@ const HomePage = (props: Props) => {
       <PageTitle title="Home"></PageTitle>
 
       <div
-        className="flex flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh]  xl:h-[71vh]  justify-center"
+        className="flex flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh] xl:h-[71vh] justify-center"
         data-aos="fade"
       >
         {/* Avatar Info Start */}
@@ -21,7 +21,7 @@ const HomePage = (props: Props) => {
           src={userImage}
           alt="my-avatar"
         />
-        <h3 className="mt-6 mb-1 text-5xl font-semibold text-white">
+        <h3 className="mt-6 mb-1 text-5xl font-semibold dark:text-white">
           Duy (Edward) Pham
         </h3>
         <p className="mb-4 text-[#7B7B7B]">Software Engineer</p>

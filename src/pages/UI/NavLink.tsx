@@ -5,7 +5,7 @@ interface NavLinkProps extends LinkProps {
   inactiveClassName: string;
 }
 
-// Active navlinks function
+// Active navLinks function
 export default function NavLink({
   to,
   className,

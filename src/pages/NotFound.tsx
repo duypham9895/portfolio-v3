@@ -9,7 +9,7 @@ const Notfound = (props: Props) => {
   return (
     <>
       <PageTitle title="404"></PageTitle>
-      <div className="h-screen w-full flex flex-col justify-center items-center  bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed">
+      <div className="h-screen w-full flex flex-col justify-center items-center bg-homeBg dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed">
         <h1 className="text-7xl leading-none text-white font-extrabold md:text-8xl">
           404!
         </h1>
