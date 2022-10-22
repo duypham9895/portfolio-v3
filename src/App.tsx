@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,10 +6,10 @@ import "aos/dist/aos.css";
 import NotFound from "./pages/NotFound";
 import HomePage from "./pages/HomePage";
 import Home from "./pages/UI/Home";
+import About from "./pages/About";
+import PortfolioProvider from "./hooks/PortfolioProvider";
 
-type Props = {};
-
-const App = (props: Props) => {
+const App = () => {
   useEffect(() => {
     AOS.init({ duration: 1200 });
     AOS.refresh();
@@ -17,15 +17,18 @@ const App = (props: Props) => {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<HomePage />} />
-            <Route path="home" element={<HomePage />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <PortfolioProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}>
+              <Route index element={<HomePage />} />
+              <Route path="home" element={<HomePage />} />
+              <Route path="about" element={<About />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </PortfolioProvider>
     </>
   );
 };
